@@ -1,0 +1,138 @@
+{
+  "cnm":
+  {
+    "topology":
+    {
+      "devices":
+              [
+                {
+                  "device id": "of:0000000000000007",
+                  "sensitivity": 10,
+                  "danger": 0,
+                  "connected forwarders":
+                  {
+                    "links":
+                    [
+                      {
+                        "device id":"of:0000000000000001",
+                        "port id":14,
+                        "qos parameter": 14.5,
+                        "property manager":
+                        {
+                          "properties":
+                                  [
+                                    {
+                                      "subject": "LINK",
+                                      "name": "WIRELESS",
+                                      "value": "WIRED"
+                                    }
+                                  ]
+                        }
+                      },
+                      {
+                        "device id":"of:0000000000000003",
+                        "port id":0,
+                        "qos parameter": 55.12,
+                        "property manager":
+                        {
+                          "properties":
+                          [
+                            {
+                              "subject": "LINK",
+                              "name": "WIRELESS",
+                              "value": "WIRED"
+                            },
+                            {
+                              "subject": "LINK",
+                              "name": "capacityMB",
+                              "value": 100
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "connected hosts":
+                  {
+                    "hosts":
+                            [
+                              {
+                                "host id": "54:B2:03:18:B7:41/None",
+                                "host ip": "10.0.2.66",
+                                "host traffic scores":
+                                {
+                                  "entries":
+                                  [
+                                    {
+                                      "port": 50012,
+                                      "protocol": "TCP",
+                                      "type of score": "danger",
+                                      "value": 5,
+                                      "ip destination address": "10.0.2.77"
+                                    },
+                                    {
+                                      "port": 55555,
+                                      "protocol": "UDP",
+                                      "type of score": "trust",
+                                      "value": 99,
+                                      "ip destination address": "10.0.2.33"
+                                    }
+                                  ]
+                                },
+                                "policy manager":
+                                {
+                                  "policy entries":
+                                          [
+                                            {
+                                              "subject": "LINK",
+                                              "name": "WIRELESS",
+                                              "value": "NOT_WIRELESS",
+                                              "type": "SOFT"
+                                            },
+                                            {
+                                              "subject": "DEVICE",
+                                              "name": "Current bytes per second",
+                                              "value": "LONG:5000:<",
+                                              "type": "SOFT"
+                                            },
+                                            {
+                                              "subject": "LINK",
+                                              "name": "qos",
+                                              "value": "DOUBLE:55:<",
+                                              "type": "HARD"
+                                            }
+                                          ]
+                                }
+                              }
+                            ]
+                  },
+                  "property manager":
+                  {
+                    "properties":
+                            [
+                              {
+                                "subject": "DEVICE",
+                                "name": "GEOLOCATION",
+                                "value": "USA"
+                              },
+                              {
+                                "subject": "DEVICE",
+                                "name":"Current bytes per second",
+                                "value": 100000
+                              }
+                            ]
+                  }
+                }
+              ]
+    },
+    "administration":
+    {
+      "parameters":
+      [
+        {
+          "list of parameters from NetState": "values of the parameters"
+        }
+      ]
+    }
+  }
+}

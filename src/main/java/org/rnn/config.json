@@ -1,0 +1,45 @@
+{
+  "parameters":{
+    "list":[{"IP_PREFIX_DAEMON":"169.254.246."}]
+  },
+  "visualisation ip":"192.168.100.123",
+  "blockchain ip":"10.0.1.77",
+  "config":
+  [
+    {
+      "ip":"169.254.246.7",
+      "device id":"of:0000000000000007",
+      "port":"LOCAL"
+    },
+    {
+      "ip":"169.254.246.6",
+      "device id":"of:0000000000000006",
+      "port":"LOCAL"
+    },
+    {
+      "ip":"169.254.246.5",
+      "device id":"of:0000000000000005",
+      "port":"LOCAL"
+    },
+    {
+      "ip":"169.254.246.4",
+      "device id":"of:0000000000000004",
+      "port":"LOCAL"
+    },
+    {
+      "ip":"169.254.246.3",
+      "device id":"of:0000000000000003",
+      "port":"LOCAL"
+    },
+    {
+      "ip":"169.254.246.2",
+      "device id":"of:0000000000000002",
+      "port":"LOCAL"
+    },
+    {
+      "ip":"169.254.246.1",
+      "device id":"of:0000000000000001",
+      "port":"LOCAL"
+    }
+  ]
+}
